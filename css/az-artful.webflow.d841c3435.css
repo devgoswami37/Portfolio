@@ -8,6 +8,11 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+@font-face {
+  font-family: Neue;
+  src: url(./JTUSjIg69CK48gW7PXoo9Wlhyw.ttf);
+}
 @font-face {
   font-family: mediu;
   src: url(./64d3dd9edfb41666c35b15bf_NeueHaasDisplay-Mediu.ttf);
@@ -24,13 +29,14 @@ html {
 @font-face {
   font-family: letswww;
   src: url(./JTUSjIg69CK48gW7PXoo9Wlhyw.ttf);
-}
-@font-face {
-  font-family: Bebas Neue;
-  src: url(./JTUSjIg69CK48gW7PXoo9Wlhyw.ttf);
+
 }
 /* Lines added above */
-
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   margin: 0;
 }
@@ -6387,6 +6393,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
   margin-top: 0;
   display: flex;
 }
+.contact-link-block1 h3{
+  /* font-family: bebas neue; */
+  font-family: "Bebas Neue", sans-serif;
+}
 .contact-text1 {
   /* color: var(--white);
   color: white;
@@ -6402,6 +6412,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
   font-family: bebas neue; */
   font-family: "Bebas Neue", sans-serif;
   font-family: Bebas Neue;
+  /* font-family: letswww; */
   transition: all 1s ease-in;
 }
 
@@ -6593,6 +6604,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
   .contact-text1 {
     letter-spacing: -2px;
     font-size: 18vw;
+    font-family: letswww;
   }
   .abmob {
     display: block;
