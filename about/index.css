@@ -240,3 +240,23 @@ p {
   color: #8c8c8c;
 }
 
+
+.flex-col {
+  display: block;
+  width: 100%;
+  order: 2;
+  position: relative;
+}
+.roww {
+  min-width: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.animate-dot {
+  opacity: 0;
+  animation: animateDot1 2s linear infinite;
+}
+.containerr{
+
+}

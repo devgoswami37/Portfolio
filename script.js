@@ -7,8 +7,8 @@ function page2Animation(){
         scrollTrigger:{
             trigger:"#page2",
             scroller:"body",
-            start:"top 47%",
-            end:"top 46%",
+            start:"top 57%",
+            end:"top 56%",
             // markers:true,
             scrub:2
         }

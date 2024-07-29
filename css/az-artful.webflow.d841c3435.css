@@ -2788,7 +2788,6 @@ input:checked + .slider:before {
 
 .hero-description.big {
   line-height: 1;
-  font-size: 3vw;
 }
 
 .hero-grid {
@@ -6582,8 +6581,8 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 @media screen and (max-width: 479px) {
   .arrowblack {
-    width: 8vw;
-    height: 8vw;
+    width: 9vw;
+    height: 9vw;
     margin-top: 4vw;
     margin-left: 1vh;
   }
@@ -6594,8 +6593,8 @@ Remove or comment-out the code block below to see how the browser will fall-back
     margin-left: 1vh;
   }
   #lets-connect1 {
-    margin-top: 0px;
-    margin-bottom: 1vh;
+    /* margin-top: 0px; */
+    margin-bottom: -1vh;
   }
   .text-scroling-section {
     position: relative;
@@ -6603,7 +6602,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
   }
   .contact-text1 {
     letter-spacing: -2px;
-    font-size: 18vw;
+    font-size: 19vw;
     font-family: letswww;
   }
   .abmob {
