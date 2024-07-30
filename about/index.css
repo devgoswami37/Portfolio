@@ -240,23 +240,179 @@ p {
   color: #8c8c8c;
 }
 
+.about-services {
+  padding-bottom: calc(var(--section-padding) / 1.8);
+  padding-top: calc(var(--section-padding)* .75);
+  /* background: var(--color-lightgray); */
+  margin-top: -1px;
+}
 
+
+:root {
+  --color-dark: #1C1D20;
+  --color-dark-dark: #141517;
+  --color-light: #FFFFFF;
+  --color-blue: #455CE9;
+  --color-blue-dark: #334BD3;
+  --color-gray: #999D9E;
+  --color-lightgray: #E9EAEB;
+  --color-white: #FFFFFF;
+  --color-border: rgba(28, 29, 32, 0.175);
+  --color-border-solid: #D2D2D2;
+  --color-border-light: rgba(255, 255, 255, 0.2);
+  --color-border-solid-light: #545557;
+  --color-text: #1C1D20;
+  --color-text-light: #FFF;
+  --alert-error: #ff4444;
+  --alert-success: #24C958;
+  --animation-primary: all .5s cubic-bezier(.7, 0, .3, 1);
+  --animation-fast: all .3s cubic-bezier(.7, 0, .3, 1);
+  --animation-smooth: all .7s cubic-bezier(.7, 0, .3, 1);
+  --animation-slow: all .9s cubic-bezier(.7, 0, .3, 1);
+  --section-padding: clamp(5em, 21vh, 12em);
+  --container-padding: clamp(2.5em, 8vw, 8em);
+  --gap-padding: clamp(1.5em, 4vw, 2.5em);
+}
+
+::selection {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  text-shadow: none;
+}
+
+.about-services .row:nth-child(1) {
+  padding-bottom: calc(var(--section-padding) / 2);
+  margin-left: 0;
+  padding-bottom: 4vw;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
 .flex-col {
   display: block;
   width: 100%;
   order: 2;
   position: relative;
 }
-.roww {
-  min-width: 60vh;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-}
+
 .animate-dot {
   opacity: 0;
   animation: animateDot1 2s linear infinite;
 }
-.containerr{
+.about-services .row:nth-child(2) {
+  width: calc(100% + calc(var(--container-padding) / 1.5));
+  margin-left: calc(var(--container-padding) / -1.5);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.about-services .row:nth-child(2) .flex-col {
+  width: 33.333%;
+  padding-left: calc(var(--container-padding) / 1.5);
+}
+.flex-col {
+  display: block;
+  width: 100%;
+  order: 2;
+  position: relative;
+}
+.about-services .row:nth-child(2) .flex-col h5:nth-child(1) {
+  padding-bottom: 2em;
+}
+.about-services .row:nth-child(2) .flex-col h5 {
+  margin: 0;
+  font-size: .8em;
+}
 
+.about-services .row:nth-child(2) .flex-col .stripe {
+  margin-bottom: 2em;
+}
+.stripe {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-border);
+}
+.about-services .row:nth-child(2) .flex-col h4 {
+  margin: 0;
+}
+
+.about-services .row:nth-child(2) .flex-col p:nth-child(4) {
+  padding-top: 2em;
+}
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, p:last-child, p.big:last-child, p.small:last-child, a:last-child, strong:last-child {
+  margin-bottom: 0;
+}
+
+.about-services .row:nth-child(2) .flex-col svg path {
+  fill: var(--color-dark);
+}
+.about-services .row:nth-child(2) .flex-col svg {
+  width: 1em;
+  padding: 0;
+  margin-right: .25em;
+  transform: translate(0, -.05em);
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+svg {
+  max-width: none;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.animate-dot {
+  opacity: 0;
+  animation: animateDot1 2s linear infinite;
+}
+@keyframes animateDot1 {
+  0% {
+      opacity: 0;
+  }
+  20% {
+      opacity: 0;
+  }
+  30% {
+      opacity: 1;
+  }
+  90% {
+      opacity: 1;
+  }
+}
+@media screen and (max-width: 479px) {
+  .about-services {
+    padding-top: calc(var(--section-padding)* .55);
+    padding-bottom: calc(var(--section-padding)* .2);
+}
+  .about-services .row:nth-child(2) .flex-col {
+    width: 100%;
+    padding-left: 0;
+}
+.about-services .row:nth-child(2) {
+  width: 100%;
+  margin-left: 0;
+}
+.flex-col {
+ margin-bottom: 5vh;
+}
+.about-services .row:nth-child(1) {
+  padding-bottom: 2vh;
+}
+.about-services .row:nth-child(2) .flex-col h5:nth-child(1) {
+  padding-bottom: 1em;
+}
+.about-services .row:nth-child(2) .flex-col .stripe {
+  margin-bottom: 1em;
+}
+.about-services .row:nth-child(2) .flex-col p:nth-child(4) {
+  padding-top: 1em;
+}
 }
