@@ -6876,11 +6876,12 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 .btn-text-inner {
   font-size: 0.67em;
+  cursor: pointer;
   color: #444;
 }
 .flex-col h5 {
   font-size: 0.56em;
-  opacity: 0.67;
+  opacity: 0.6;
 }
 .flex-col p {
   font-size: 0.67em;
@@ -6897,7 +6898,8 @@ Remove or comment-out the code block below to see how the browser will fall-back
     flex-direction: column;
   }
   .borderr {
-    border-top: 1px solid rgb(180, 180, 180);
+    /* border-top: 1px solid rgb(180, 180, 180); */
+    border-top: 1px solid #cecece;
   }
   .btn-link-external {
     margin-right: 7.5vw;
