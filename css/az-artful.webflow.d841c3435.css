@@ -29,7 +29,6 @@ html {
 @font-face {
   font-family: letswww;
   src: url(./JTUSjIg69CK48gW7PXoo9Wlhyw.ttf);
-
 }
 /* Lines added above */
 .bebas-neue-regular {
@@ -6392,7 +6391,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
   margin-top: 0;
   display: flex;
 }
-.contact-link-block1 h3{
+.contact-link-block1 h3 {
   /* font-family: bebas neue; */
   font-family: "Bebas Neue", sans-serif;
 }
@@ -6666,13 +6665,13 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .mobabout {
   display: none;
 }
-#page2-bellow{
+#page2-bellow {
   height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 2.5vw;
-    padding-right: 7vw;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2.5vw;
+  padding-right: 7vw;
 }
 /* #aboutcir{
   height: 11vw;
@@ -6794,7 +6793,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 .dark-mode #aboutcir:hover:after {
   background-color: #000;
-
 }
 
 #aboutcir:hover a {
@@ -6843,5 +6841,69 @@ Remove or comment-out the code block below to see how the browser will fall-back
     height: 35vw;
     width: 35vw;
     top: -1vh;
+  }
+}
+.bottom-footer {
+  padding: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom-footer .flex-col {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+}
+.flex-col {
+  /* display: block; */
+  /* width: 100%; */
+  order: 2;
+  position: relative;
+}
+.socialsss {
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+  list-style-type: none;
+  padding-left: 0;
+}
+.btn-link-external {
+  text-decoration: none;
+  margin-right: 1vw;
+}
+.btn-link-external a:hover {
+  text-decoration: none;
+}
+.btn-text-inner {
+  font-size: 0.7em;
+  color: #444;
+}
+.flex-col h5 {
+  font-size: 0.6em;
+  opacity: 0.7;
+}
+.flex-col p {
+  font-size: 0.7em;
+  color: #2b2b2b;
+}
+.credits{
+  margin-right: 3vw;
+}
+@media screen and (max-width: 479px) {
+  .bottom-footer {
+    flex-direction: column;
+  }
+  .borderr {
+    border-top: 1px solid rgb(180, 180, 180);
+  }
+  .btn-link-external {
+    margin-right: 4vw;
+  }
+  .btn-text-inner {
+    font-size: 0.9em;
+    color: #494949;
+  }
+  .flex-col p {
+    font-size: 0.9em;
   }
 }
