@@ -6875,16 +6875,19 @@ Remove or comment-out the code block below to see how the browser will fall-back
   text-decoration: none;
 }
 .btn-text-inner {
-  font-size: 0.7em;
+  font-size: 0.67em;
   color: #444;
 }
 .flex-col h5 {
-  font-size: 0.6em;
-  opacity: 0.7;
+  font-size: 0.56em;
+  opacity: 0.67;
 }
 .flex-col p {
-  font-size: 0.7em;
+  font-size: 0.67em;
   color: #2b2b2b;
+}
+#timeSpan{
+  font-size: 0.9em;
 }
 .credits{
   margin-right: 3vw;
@@ -6897,16 +6900,16 @@ Remove or comment-out the code block below to see how the browser will fall-back
     border-top: 1px solid rgb(180, 180, 180);
   }
   .btn-link-external {
-    margin-right: 4.5vw;
+    margin-right: 7.5vw;
   }
   .btn-text-inner {
-    font-size: 0.85em;
+    font-size: 0.82em;
     color: #494949;
   }
   .flex-col p {
-    font-size: 0.8em;
+    font-size: 0.75em;
   }
   #timeSpan{
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
 }
