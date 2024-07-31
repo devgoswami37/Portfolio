@@ -68,7 +68,7 @@ var tl = gsap.timeline()
 //     let minutes = d.getMinutes().toString().padStart(2, '0');
 //     time.innerHTML = `${hours}:${minutes} GMT+5:30`;
 // }, 1000);
-
+function timedisp(){
 let time = document.getElementById("timeSpan");
 setInterval(() => {
     let d = new Date();
@@ -78,3 +78,23 @@ setInterval(() => {
     hours = (hours % 12 || 12).toString().padStart(2, '0');
     time.innerHTML = `${hours}:${minutes} ${period} (GMT+5:30)`;
 }, 1000);
+}
+timedisp()
+
+
+function elementmovewithcursor(){
+document.querySelectorAll('.magnetic').forEach(item => {
+    item.addEventListener('mousemove', function(e) {
+        const strength = this.getAttribute('data-strength') || 20;
+        const rect = this.getBoundingClientRect();
+        const offsetX = ((e.clientX - rect.left) / rect.width - 0.5) * strength;
+        const offsetY = ((e.clientY - rect.top) / rect.height - 0.5) * strength;
+        this.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+    });
+
+    item.addEventListener('mouseleave', function() {
+        this.style.transform = 'translate(0, 0)';
+    });
+});
+}
+elementmovewithcursor()

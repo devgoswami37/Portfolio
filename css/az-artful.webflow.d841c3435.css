@@ -6481,7 +6481,9 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .dark-mode .text-animation-wrapper.first {
   background-color: #fff;
 }
-
+.btn-link-external a:hover .cursor-arrow {
+  display: block;
+}
 .animation-content {
   white-space: nowrap;
   flex-direction: row;
@@ -6893,6 +6895,31 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .credits{
   margin-right: 3vw;
 }
+.btn-link-external a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-link-external a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.btn-link-external a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 @media screen and (max-width: 479px) {
   .bottom-footer {
     flex-direction: column;
@@ -6914,4 +6941,13 @@ Remove or comment-out the code block below to see how the browser will fall-back
   #timeSpan{
     font-size: 0.85em;
   }
+}
+.magnetic {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.1s ease-out;
+}
+
+.magnetic:hover .btn-text-inner {
+  transition: transform 0.1s ease-out;
 }
