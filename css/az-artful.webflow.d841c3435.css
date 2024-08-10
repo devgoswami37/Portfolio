@@ -4973,12 +4973,12 @@ input:checked + .slider:before {
   .hero-picture {
     left: -35vw;
     width: 100vw;
-    height: 80vh;
+    height: 85vh;
   }
 
   .hero-grid {
     height: 50%;
-    padding-bottom: 30%;
+    /* padding-bottom: 30%; */
     -webkit-align-content: end;
     -ms-flex-line-pack: end;
     align-content: end;
