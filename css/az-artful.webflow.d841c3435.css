@@ -4974,20 +4974,21 @@ input:checked + .slider:before {
     left: -35vw;
     width: 100vw;
     height: 85vh;
-    padding-bottom: 3vh;
+    padding-bottom: 5vh;
   }
 
   .hero-grid {
     height: 50%;
     /* padding-bottom: 30%; */
-    visibility: hidden;
     -webkit-align-content: end;
     -ms-flex-line-pack: end;
     align-content: end;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
-
+.hero-grid-sec{
+  visibility: hidden;
+}
   .project-item-image {
     top: 10%;
     height: 80%;
